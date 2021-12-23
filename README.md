@@ -6,6 +6,8 @@ you can schedule the tasks and manage them bu using this application. it's shall
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+**⚠️ Check your Node.js is up to be updated**
+
 ## 🛠️ How can you start the project?
 
 In the project directory, you can run:
