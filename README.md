@@ -29,8 +29,7 @@ you can run the test using the following script.
 - [x] Develop "Add", "Edit", "Remove" for Cards
 - [x] Cards move between the lists
 - [x] Board store the current state
-- [ ] Memoise search input using throttle
-- [ ] Move card with better UX
+- [ ] Move card with better Logic
 - [ ] Add more tests for better coverage
   - [ ] Test rename list
   - [ ] Test rename card
@@ -39,5 +38,6 @@ you can run the test using the following script.
 - [ ] Add drag and drop
   - [ ] For cards
   - [ ] For Lists
-- [ ] Lists can move in the board
-- [ ] Add more than one board
+- [ ] Make tasks assignable to persons.
+- [ ] Lists can move in the board.
+- [ ] Add more than one board.
