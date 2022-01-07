@@ -43,8 +43,6 @@ function List({
     itemStates.NO_TITLE
   );
 
-  console.log(`cards`, cards);
-
   return (
     <Container>
       {/* List title  */}

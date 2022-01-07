@@ -56,8 +56,6 @@ function Board() {
 
     if (!lists && stored_lists) {
       const { saved_list, saved_cards } = JSON.parse(stored_lists);
-      console.log(`saved_list`, saved_list);
-      console.log(`saved_cards`, saved_cards);
       setLists(saved_list);
       setCards(saved_cards);
     }
