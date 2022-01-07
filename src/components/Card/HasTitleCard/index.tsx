@@ -33,10 +33,11 @@ const Container = styled.div`
 const Header = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   /* card title */
   > :first-child {
-    max-width: 240px;
+    max-width: 184px;
     flex: 1;
     padding: ${({ theme }) => theme.spacing[1]};
     font-size: ${({ theme }) => theme.fontSizes.default};

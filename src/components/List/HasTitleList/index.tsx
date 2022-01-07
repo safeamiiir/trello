@@ -33,13 +33,14 @@ const Container = styled.div`
 const Header = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   /* List title */
   > :first-child {
     flex: 1;
     padding: ${({ theme }) => `${theme.spacing[1]} ${theme.spacing[2]}`};
     font-size: ${({ theme }) => theme.fontSizes.large};
-    max-width: 240px;
+    max-width: 192px;
   }
 
   /* Icon container */
