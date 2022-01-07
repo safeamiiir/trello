@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 import { ConstantTexts } from 'constants/en';
 
-test('renders learn react link', () => {
+test('renders project', () => {
   render(<App />);
   const linkElement = screen.getByText(ConstantTexts.project_title);
   expect(linkElement).toBeInTheDocument();
