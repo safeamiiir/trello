@@ -135,14 +135,8 @@ function HasTitleCard({
   }
   return (
     <Container>
-      <Up
-        onClick={() => moveCard(card, moveDirections.UP as moveDirectionsTypes)}
-      />
-      <Left
-        onClick={() =>
-          moveCard(card, moveDirections.LEFT as moveDirectionsTypes)
-        }
-      />
+      <Up onClick={() => moveCard(card, moveDirections.UP)} />
+      <Left onClick={() => moveCard(card, moveDirections.LEFT)} />
       <Header>
         {editTitle ? (
           <input
@@ -164,16 +158,8 @@ function HasTitleCard({
           <TrashIcon />
         </div>
       </Header>
-      <Right
-        onClick={() =>
-          moveCard(card, moveDirections.RIGHT as moveDirectionsTypes)
-        }
-      />
-      <Down
-        onClick={() =>
-          moveCard(card, moveDirections.DOWN as moveDirectionsTypes)
-        }
-      />
+      <Right onClick={() => moveCard(card, moveDirections.RIGHT)} />
+      <Down onClick={() => moveCard(card, moveDirections.DOWN)} />
     </Container>
   );
 }

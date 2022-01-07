@@ -69,15 +69,13 @@ function TypeTitleList({ setListStep, addNewList }: TypeTitleListInterface) {
           onClick={() => {
             if (list) {
               addNewList(list);
-              setListStep(itemStates.NO_TITLE as itemStatesTypes);
+              setListStep(itemStates.NO_TITLE);
             }
           }}
         >
           {ConstantTexts.add_list_button}
         </AddButton>
-        <div
-          onClick={() => setListStep(itemStates.NO_TITLE as itemStatesTypes)}
-        >
+        <div onClick={() => setListStep(itemStates.NO_TITLE)}>
           <RemoveIcon />
         </div>
       </span>

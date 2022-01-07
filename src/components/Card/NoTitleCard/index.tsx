@@ -38,9 +38,7 @@ const Container = styled.div`
 
 function NoTitleCard({ setCardStep }: NoTitleCardInterface) {
   return (
-    <Container
-      onClick={() => setCardStep(itemStates.TYPE_TITLE as itemStatesTypes)}
-    >
+    <Container onClick={() => setCardStep(itemStates.TYPE_TITLE)}>
       <AddIcon />
       <span>{ConstantTexts.card_input_title}</span>
     </Container>

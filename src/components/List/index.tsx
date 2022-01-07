@@ -7,7 +7,12 @@ import TypeTitleCard from 'components/Card/TypeTitleCard';
 import NoTitleCard from 'components/Card/NoTitleCard';
 
 import { itemStates } from 'constants/constants';
-import { CardInterface, ListInterface, moveDirectionsTypes } from 'types/type';
+import {
+  CardInterface,
+  itemStatesTypes,
+  ListInterface,
+  moveDirectionsTypes,
+} from 'types/type';
 
 interface ListComponentInterface {
   list: ListInterface;
@@ -34,7 +39,9 @@ function List({
   handleEditCardTitle,
   moveCard,
 }: ListComponentInterface) {
-  const [cardStep, setCardStep] = useState(itemStates.NO_TITLE);
+  const [cardStep, setCardStep] = useState<itemStatesTypes>(
+    itemStates.NO_TITLE
+  );
 
   console.log(`cards`, cards);
 

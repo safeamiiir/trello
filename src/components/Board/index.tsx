@@ -5,7 +5,7 @@ import List from 'components/List';
 import TypeTitleList from 'components/List/TypeTitleList';
 import NoTitleList from 'components/List/NoTitleList';
 
-import { CardInterface, ListInterface } from 'types/type';
+import { CardInterface, itemStatesTypes, ListInterface } from 'types/type';
 import { itemStates } from 'constants/constants';
 import {
   addNewCard,
@@ -36,7 +36,9 @@ const ClearIcon = styled.div`
 `;
 
 function Board() {
-  const [listStep, setListStep] = useState(itemStates.NO_TITLE);
+  const [listStep, setListStep] = useState<itemStatesTypes>(
+    itemStates.NO_TITLE
+  );
   const [lists, setLists] = useState<ListInterface[]>();
   const [cards, setCards] = useState<CardInterface[]>();
 

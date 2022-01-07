@@ -83,15 +83,13 @@ function TypeTitleList({
           onClick={() => {
             if (card) {
               addNewCard(card);
-              setCardStep(itemStates.NO_TITLE as itemStatesTypes);
+              setCardStep(itemStates.NO_TITLE);
             }
           }}
         >
           {ConstantTexts.add_card_button}
         </AddButton>
-        <div
-          onClick={() => setCardStep(itemStates.NO_TITLE as itemStatesTypes)}
-        >
+        <div onClick={() => setCardStep(itemStates.NO_TITLE)}>
           <RemoveIcon />
         </div>
       </span>

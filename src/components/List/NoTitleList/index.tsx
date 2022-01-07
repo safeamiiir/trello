@@ -34,9 +34,7 @@ const Container = styled.div`
 
 function NoTitleList({ setListStep }: NoTitleListInterface) {
   return (
-    <Container
-      onClick={() => setListStep(itemStates.TYPE_TITLE as itemStatesTypes)}
-    >
+    <Container onClick={() => setListStep(itemStates.TYPE_TITLE)}>
       <AddIcon />
       <span>{ConstantTexts.list_input_title}</span>
     </Container>
